@@ -18,11 +18,11 @@ en:
       unconfirmed: "You have to confirm your email address before continuing."
     mailer:
       confirmation_instructions:
-        subject: "Confirmation instructions"
+        subject: "Blocipedia confirmation instructions"
       reset_password_instructions:
-        subject: "Reset password instructions"
+        subject: "Blocipedia reset password instructions"
       unlock_instructions:
-        subject: "Unlock instructions"
+        subject: "Blocipedia unlock instructions"
       password_change:
         subject: "Password Changed"
     omniauth_callbacks:
