@@ -51,3 +51,6 @@ gem 'devise'
 
 # To authorize different users for different tasks
 gem 'pundit'
+
+# To populate data
+gem 'faker'
