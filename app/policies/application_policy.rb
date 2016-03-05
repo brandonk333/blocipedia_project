@@ -1,13 +1,13 @@
-class WikiPolicy < ApplicationPolicy
+class ApplicationPolicy
   attr_reader :user, :record
 
   def initialize(user, record)
     @user = user
     @record = record
   end
-  
+
   def index?
-    true
+    false
   end
 
   def show?
@@ -31,7 +31,7 @@ class WikiPolicy < ApplicationPolicy
   end
 
   def destroy?
-    user.present? && (record.user == user || user.admin?)
+    user.present? && user.admin?
   end
 
   def scope

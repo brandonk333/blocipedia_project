@@ -49,3 +49,5 @@ gem 'bootstrap-sass'
 
 gem 'devise'
 
+# To authorize different users for different tasks
+gem 'pundit'
