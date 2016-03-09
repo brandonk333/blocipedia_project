@@ -9,7 +9,7 @@ def create
  
   charge = Stripe::Charge.create(
     customer: customer.id,
-    amount: 10_00,
+    amount: Amount.default,
     description: "Blocipedia Premium Membership - #{current_user.email}",
     currency: 'usd'
     )
@@ -30,8 +30,15 @@ def new
   @stripe_btn_data = {
     key: "#{ Rails.configuration.stripe[:publishable_key] }",
     description: "Blocipedia Premium Membership - #{current_user.name}",
-    amount: @amount
+    amount: Amount.default
   }
 end
+
+class Amount
+  def default
+    self.amount = 15_00
+  end  
+end
+
 
 
