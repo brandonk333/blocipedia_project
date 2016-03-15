@@ -23,6 +23,8 @@ class ChargesController < ApplicationController
       description: "Blocipedia Premium Membership - #{current_user.email}",
       currency: 'usd'
     )
+    
+    #current_user.update_attributes(role: 'premium_user', stripe_customer_id: customer_id , stripe_subscription_id: customer.subscriptions.first.id)
   
     flash[:notice] = "Thanks for subscribing, #{current_user.email}! Feel free to pay me again."
     redirect_to root_url
