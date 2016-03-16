@@ -24,7 +24,7 @@ class ChargesController < ApplicationController
       currency: 'usd'
     )
     
-    current_user.update_attribute(:role, 'premium')
+    current_user.update_attribute(:role, 'premium_user')
   
     flash[:notice] = "Thanks for subscribing, #{current_user.email}! Feel free to pay me again."
     redirect_to root_url
