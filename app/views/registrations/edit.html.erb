@@ -1,7 +1,0 @@
-<h3>Manage my account</h3>
-
-<% if current_user && current_user.role == 'standard' %>
-<%= link_to "Upgrade to Premium", new_charge_path, class: 'btn btn-success' %>
-<% else %>
-<%= link_to "Downgrade", new_charge_path, class: 'btn btn-warning' %>
-<% end %>
