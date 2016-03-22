@@ -5,8 +5,10 @@
   <% end %>
   
 <% else %>
-  <h2>Downgrade Account</h2>
-  <h5>Are you sure you want to lose premium acccess to Blocipedia? </h5>
-  <%= link_to "Yes, downgrade my account", downgrade_path, class: 'btn btn-warning', data: { confirm: 'Are you sure you want to downgrade and make all your wikis public?' } %>
+<h2>Downgrade Account</h2>
+<h4><br>Are you sure you want to lose premium acccess to Blocipedia? <br><br>If you downgrade your account, your private wikis will become public.
+</h4>
+<br>
+<%= link_to "Yes, downgrade my account", downgrade_path, class: 'btn btn-warning', data: { confirm: 'Are you sure you want to downgrade and make all your wikis public?' } %>
 <% end %>
 
