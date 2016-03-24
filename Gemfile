@@ -54,3 +54,9 @@ gem 'pundit'
 
 # To populate data
 gem 'faker'
+
+# For payment intergration
+gem 'stripe'
+
+# To securely store sensitive data
+gem 'figaro', '1.0'
