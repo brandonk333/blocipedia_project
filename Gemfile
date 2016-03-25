@@ -60,3 +60,6 @@ gem 'stripe'
 
 # To securely store sensitive data
 gem 'figaro', '1.0'
+
+# For markdown capacity
+gem 'redcarpet'
