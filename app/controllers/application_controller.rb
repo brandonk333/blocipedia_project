@@ -6,9 +6,16 @@ class ApplicationController < ActionController::Base
   
   before_action :authenticate_user!
   
-   rescue_from Pundit::NotAuthorizedError do |exception|
-     redirect_to root_url, alert: exception.message
-   end  
+  rescue_from Pundit::NotAuthorizedError do |exception|
+    redirect_to root_url, alert: exception.message
+  end
+   
+  protected
+
+  def after_sign_in_path_for(resource)
+     wikis_path
+  end
 end
+   
 
 
