@@ -63,3 +63,6 @@ gem 'figaro', '1.0'
 
 # For markdown capacity
 gem 'redcarpet'
+
+# Check code
+gem 'rubocop'
