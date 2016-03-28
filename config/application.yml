@@ -10,10 +10,7 @@
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 
-<<<<<<< HEAD
+#SENDGRID_PASSWORD: 
+#SENDGRID_USERNAME: 
 STRIPE_PUBLISHABLE_KEY: pk_test_ghkJZogiTSDzSrXVlZKtkcvu
 STRIPE_SECRET_KEY: sk_test_dd2w0dR8Q8Rj1iWhQHNB9wyW
-=======
-SENDGRID_PASSWORD: 
-SENDGRID_USERNAME: 
->>>>>>> bf10e484d1d3347ade0f16b9d2defcfe576ad967
