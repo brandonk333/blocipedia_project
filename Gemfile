@@ -47,3 +47,22 @@ end
 
 gem 'bootstrap-sass'
 
+gem 'devise'
+
+# To authorize different users for different tasks
+gem 'pundit'
+
+# To populate data
+gem 'faker'
+
+# For payment intergration
+gem 'stripe'
+
+# To securely store sensitive data
+gem 'figaro', '1.0'
+
+# For markdown capacity
+gem 'redcarpet'
+
+# Check code
+gem 'rubocop'
