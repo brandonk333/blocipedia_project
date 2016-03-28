@@ -1,4 +1,6 @@
+<div class="wiki-header">
 <h1>All Wikis</h1>
+</div>
   <% if policy(Wiki.new).create? %>
     <%= link_to "Create a New Wiki", new_wiki_path, class: 'btn btn-success' %>
   <% end %>

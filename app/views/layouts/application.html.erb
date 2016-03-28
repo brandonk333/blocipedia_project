@@ -10,16 +10,17 @@
 <body>
   <div class="container">
     <ul class="nav nav-tabs">
-      <li><%= link_to "Blocipedia", root_path %></li>
-      <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "Home", root_path, class: 'btn btn-success' %></li>
+      <li><%= link_to "About", about_path, class: 'btn btn-success' %></li>
+      <li><%= link_to "Wikis", wikis_path, class: 'btn btn-success' %></li>
       
       <div class="pull-right user-info">
         <% if user_signed_in? %>
           Signed in as: <strong><%= current_user.email %></strong> |
-          <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> - <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+          <%= link_to 'Edit profile', edit_user_registration_path, class: 'btn btn-success' %> - <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn btn-success'  %>
         <% else %>
-          <%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link'  %> -
-          <%= link_to "Sign In", new_user_session_path, :class => 'navbar-link'  %>
+          <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-success'  %> -
+          <%= link_to "Sign In", new_user_session_path, class: 'btn btn-success'  %>
         <% end %>
       </div>
     </ul>
